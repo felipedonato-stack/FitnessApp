@@ -1,0 +1,177 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_116d4815916e49628022ef8d0374c251
+  created: 1751237120764
+  modified: 1751237120764
+  description: ""
+collection:
+  - url: http://localhost:3000/api/register
+    name: USUARIOS
+    meta:
+      id: req_02370277ea7748f3b61383db4b16a0ba
+      created: 1751237120841
+      modified: 1751239163070
+      isPrivate: false
+      description: ""
+      sortKey: -1751237120841
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "nome": "Paolo",
+          "email": "paolo@email.com",
+          "senha": "123456"
+        }
+    parameters:
+      - id: pair_d3a9049fcbd34c16b51ede0c2e274eea
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+      - id: pair_1948e4b0adc147ab915e6205f099177f
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/login
+    name: token de usuarios
+    meta:
+      id: req_0a0cce8545494239a246fcbb8fd6061b
+      created: 1751238773810
+      modified: 1751239169256
+      isPrivate: false
+      description: ""
+      sortKey: -1751238773810
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "email": "paolo@email.com",
+          "senha": "123456"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/usuarios
+    name: TOTAL DE USUARIOS
+    meta:
+      id: req_fc7bf48abb8048408d8f0845fc2e4cf5
+      created: 1751239017408
+      modified: 1751324148050
+      isPrivate: false
+      description: ""
+      sortKey: -1751239017408
+    method: POST
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/treinos
+    name: New Request
+    meta:
+      id: req_d3f45c1b27004cfa9df593e0e4defedc
+      created: 1751242868569
+      modified: 1751243172781
+      isPrivate: false
+      description: ""
+      sortKey: -1751242868569
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "nome": "Treino de pernas",
+          "categoria": "Força",
+          "duracao": 45,
+          "nivel": "Intermediário",
+          "descricao": "Agachamento, leg press e afundo"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000//api/login
+    name: New Request
+    meta:
+      id: req_163f95825622400095479b1ed33265a4
+      created: 1751245953186
+      modified: 1751321035689
+      isPrivate: false
+      description: ""
+      sortKey: -1751245953187
+    method: GET
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "email": "paolo@email.com",
+          "senha": "123456"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_346a18f25d39873d5e7063df0c1e6bd2e1b47d37
+    created: 1751237120777
+    modified: 1751237120777
+environments:
+  name: Base Environment
+  meta:
+    id: env_346a18f25d39873d5e7063df0c1e6bd2e1b47d37
+    created: 1751237120776
+    modified: 1751237120776
+    isPrivate: false
